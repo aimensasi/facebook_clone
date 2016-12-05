@@ -28,7 +28,7 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
-  xdescribe "POST #create" do
+  describe "POST #create" do
     # happy_path
     context "valid_params" do
       it "creates new user if params are correct" do
@@ -60,7 +60,7 @@ RSpec.describe UsersController, type: :controller do
 
 
 
-  xdescribe "GET #edit" do
+  describe "GET #edit" do
     before do
       session[:user_id] = user.id
       get :edit, {:id => user.to_param}
@@ -72,12 +72,12 @@ RSpec.describe UsersController, type: :controller do
 
     it "renders the edit template" do
       expect(response).to render_template("edit")
-    end
+    end 
 
   end
 
 
-  xdescribe "PUT #update" do
+  describe "PUT #update" do
   # happy_path
     context "with valid update params" do
       it "updates the requested user" do
@@ -106,20 +106,21 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
-  xdescribe "DELETE #destroy" do
+  describe "DELETE #destroy" do
+    skip "Waiting to finish statuses controller test" do 
+      it "destroys the requested user" do
+        user = user1
+        expect {
+          delete :destroy, {:id => user.to_param}
+        }.to change(User, :count).by(-1)
+      end
 
-    it "destroys the requested user" do
-      user = user1
-      expect {
+      it "redirects to the statuses_path" do
+        user = user1
         delete :destroy, {:id => user.to_param}
-      }.to change(User, :count).by(-1)
-    end
-
-    it "redirects to the statuses_path" do
-      user = user1
-      delete :destroy, {:id => user.to_param}
-      expect(response).to redirect_to(statuses_path)
-      expect(flash[:notice]).to eq "Account is deleted"
+        expect(response).to redirect_to(statuses_path)
+        expect(flash[:notice]).to eq "Account is deleted"
+      end
     end
   end
 
