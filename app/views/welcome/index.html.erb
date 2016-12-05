@@ -1,0 +1,8 @@
+<h2>Welcome To The World Of Testing</h2>
+<%= link_to("Home", root_path) %>
+
+<% if session[:user_id] %>
+	<%= link_to("Log Out", signout_path) %>	
+<% else %>
+	<%= link_to("Log In", new_session_path) %>	
+<% end %>
