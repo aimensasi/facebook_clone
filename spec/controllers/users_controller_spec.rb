@@ -28,7 +28,7 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
-  describe "POST #create" do
+  xdescribe "POST #create" do
     # happy_path
     context "valid_params" do
       it "creates new user if params are correct" do
@@ -60,7 +60,7 @@ RSpec.describe UsersController, type: :controller do
 
 
 
-  describe "GET #edit" do
+  xdescribe "GET #edit" do
     before do
       session[:user_id] = user.id
       get :edit, {:id => user.to_param}
@@ -77,7 +77,7 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
-  describe "PUT #update" do
+  xdescribe "PUT #update" do
   # happy_path
     context "with valid update params" do
       it "updates the requested user" do
@@ -106,7 +106,7 @@ RSpec.describe UsersController, type: :controller do
   end
 
 
-  describe "DELETE #destroy" do
+  xdescribe "DELETE #destroy" do
 
     it "destroys the requested user" do
       user = user1
