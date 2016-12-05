@@ -10648,3 +10648,1476 @@ Processing by SessionsController#destroy as HTML
 Redirected to http://test.host/
 Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$qPoau73vOwvW6JgHFo07beBr/ChgGxUWvl6OyShxjccJmtLJXdn9K"], ["created_at", "2016-12-05 10:54:04.509456"], ["updated_at", "2016-12-05 10:54:04.509456"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "joshhhh@nextacademy.com"]]
+Redirected to http://test.host/statuses
+Completed 302 Found in 14ms (ActiveRecord: 0.2ms)
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$9MUQlxwZIZlGHBXwfq59x.6kNnNkn4EGiNEjc3D.qcSOvUQmwAPHC"], ["created_at", "2016-12-05 10:54:04.535191"], ["updated_at", "2016-12-05 10:54:04.535191"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "joshhhh@nextacademy.com"]]
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$2oAZhguR3zYKKFwEoN0xQeZNblXnb4WGiy8hKWw0w7ISBr6B.KZE2"], ["created_at", "2016-12-05 10:54:04.548542"], ["updated_at", "2016-12-05 10:54:04.548542"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "joshhhh@nextacademy.com"]]
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$RiqChYKLQ5wTsK5jmKEmQe6RHc4XqnjTwRMQMrRLMqvj8UtnM67Z."], ["created_at", "2016-12-05 10:54:04.559893"], ["updated_at", "2016-12-05 10:54:04.559893"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "joshhhh@nextacademy.com"]]
+Redirected to http://test.host/statuses
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$nTOWjNoCEUmQBSu1Mktuy.zlXcZz9DP7OILUwcr.NOMBR4MlpFClG"], ["created_at", "2016-12-05 10:54:04.570577"], ["updated_at", "2016-12-05 10:54:04.570577"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "joshhhh@nextacademy.com"]]
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$nf9lFSYMGWF26YvQJ8Sw2eSF4zwYsk1nPnX/7CPlTyfiSI7SCD1Am"], ["created_at", "2016-12-05 10:54:04.582515"], ["updated_at", "2016-12-05 10:54:04.582515"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "joshhhh@nextacademy.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$F7c17g7cyCGwHJqIxdQ1Eu51AnKhg25sEMEOH5j4hd2D5ePZBPnwW"], ["created_at", "2016-12-05 10:54:04.598137"], ["updated_at", "2016-12-05 10:54:04.598137"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "joshhhh@nextacademy.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshhhh@nextacademy.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Joshhhh"], ["email", "joshhhh@nextacademy.com"], ["password_digest", "$2a$04$YLjJOFJHecNq7BbzWPdMjOZwJJWBPVzZXTWwjSry.GzjnyNsS4rUu"], ["created_at", "2016-12-05 10:54:04.612102"], ["updated_at", "2016-12-05 10:54:04.612102"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"joshhhh@nextacademy.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "joshhhh@nextacademy.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$2jwegkH1zUNVRqIZQq89Hu3qQYFeb2zZ9eaEZ5WAIdJpGWQlh31KO"], ["created_at", "2016-12-05 10:54:33.838382"], ["updated_at", "2016-12-05 10:54:33.838382"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 645], ["created_at", "2016-12-05 10:54:33.898144"], ["updated_at", "2016-12-05 10:54:33.898144"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$O1HlaJ2YhTBfb5RkOXW9F.xVLPvnu9LqGVQw3DZKWjDCZZcHwAsEy"], ["created_at", "2016-12-05 10:54:33.909763"], ["updated_at", "2016-12-05 10:54:33.909763"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 646], ["created_at", "2016-12-05 10:54:33.912174"], ["updated_at", "2016-12-05 10:54:33.912174"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$QBx.YNwpdGJJaHmnKJNc2Ok3InG/lomRKeqWH2UkSwBNQRcxt5iaq"], ["created_at", "2016-12-05 10:55:17.599393"], ["updated_at", "2016-12-05 10:55:17.599393"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 647], ["created_at", "2016-12-05 10:55:17.629394"], ["updated_at", "2016-12-05 10:55:17.629394"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$I5vTPR29bakpQgnpqSWUxeTjX3GJ0F/eibu1Q4GppKBbO56..ZUj6"], ["created_at", "2016-12-05 10:55:17.680948"], ["updated_at", "2016-12-05 10:55:17.680948"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 648], ["created_at", "2016-12-05 10:55:17.683341"], ["updated_at", "2016-12-05 10:55:17.683341"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$0.oB/KQKcnFUrJtpg0KoYeFr7fdHUfjMOUnkOIM8yH4LSfK7.qm7m"], ["created_at", "2016-12-05 10:58:48.068539"], ["updated_at", "2016-12-05 10:58:48.068539"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 649], ["created_at", "2016-12-05 10:58:48.101186"], ["updated_at", "2016-12-05 10:58:48.101186"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"59", "user"=>"649"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$x3DXWD61S2aosx9p4PtAv.1IKgN8nbQShk7iVA6Eg3bAvN/b/v8uy"], ["created_at", "2016-12-05 10:58:48.123611"], ["updated_at", "2016-12-05 10:58:48.123611"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 650], ["created_at", "2016-12-05 10:58:48.126977"], ["updated_at", "2016-12-05 10:58:48.126977"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"60", "user"=>"650"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$RYRPV3Am4D47GoV7C3vr/.q7STGGE0RMZUkMkvzSYWLidZjgS7at6"], ["created_at", "2016-12-05 10:59:49.954534"], ["updated_at", "2016-12-05 10:59:49.954534"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 651], ["created_at", "2016-12-05 10:59:49.987089"], ["updated_at", "2016-12-05 10:59:49.987089"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"61", "user"=>"651"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$ZdCQ7IT5/jX5i5F7pAyaoO6MxAv6Q6fkeOBf9u1ZJi.IZeskPb3jK"], ["created_at", "2016-12-05 10:59:50.009342"], ["updated_at", "2016-12-05 10:59:50.009342"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 652], ["created_at", "2016-12-05 10:59:50.012030"], ["updated_at", "2016-12-05 10:59:50.012030"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"62", "user"=>"652"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$tS72aFq4DGdaBaPcmosPSungtCIaoEr82PkT8SE7kUcKY2dGWyGJS"], ["created_at", "2016-12-05 11:00:02.582308"], ["updated_at", "2016-12-05 11:00:02.582308"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 653], ["created_at", "2016-12-05 11:00:02.613646"], ["updated_at", "2016-12-05 11:00:02.613646"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"63", "user"=>"653"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$2pcHugxySsKMB6VETJYOFO2nn2vEPo3ovwXtbpuKYUdH7KUhQTqb6"], ["created_at", "2016-12-05 11:00:02.631558"], ["updated_at", "2016-12-05 11:00:02.631558"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 654], ["created_at", "2016-12-05 11:00:02.635362"], ["updated_at", "2016-12-05 11:00:02.635362"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"64", "user"=>"654"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$jH2PHRsWmDqg.oEYdPVCNudvAfQinvIdWUvmFAw3YZaZmjKnMSbn6"], ["created_at", "2016-12-05 11:00:27.666721"], ["updated_at", "2016-12-05 11:00:27.666721"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 655], ["created_at", "2016-12-05 11:00:27.696384"], ["updated_at", "2016-12-05 11:00:27.696384"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"65", "user"=>"655"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 65]]
+Completed 500 Internal Server Error in 71644ms (ActiveRecord: 2.8ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$US5CE0j2vt6C46S1KRLP2uYZAyQtvzv8UxGltnmFdIIQAVow9uSu6"], ["created_at", "2016-12-05 11:01:39.356131"], ["updated_at", "2016-12-05 11:01:39.356131"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 656], ["created_at", "2016-12-05 11:01:39.360167"], ["updated_at", "2016-12-05 11:01:39.360167"]]
+  [1m[36m (0.5ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"66", "user"=>"656"}}
+Completed 500 Internal Server Error in 852ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$ni7e0v9Dv5hlh3u8974PTu5TjWZlyvW.hPgPt2vI9mf2LwmMGbory"], ["created_at", "2016-12-05 11:01:43.197307"], ["updated_at", "2016-12-05 11:01:43.197307"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 657], ["created_at", "2016-12-05 11:01:43.224299"], ["updated_at", "2016-12-05 11:01:43.224299"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"67", "user"=>"657"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$8J2JE5YdJNVc0S97xvfHA.utuC.QfgMprv0DzjExlEQtaDOkEvBzm"], ["created_at", "2016-12-05 11:01:43.245088"], ["updated_at", "2016-12-05 11:01:43.245088"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 658], ["created_at", "2016-12-05 11:01:43.247467"], ["updated_at", "2016-12-05 11:01:43.247467"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"68", "user"=>"658"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$eYrj3B/LXDRqRkmITbdMs.jkFen5jPVLpX7nt3IX.fOMVdI8UiGbW"], ["created_at", "2016-12-05 11:05:44.278276"], ["updated_at", "2016-12-05 11:05:44.278276"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 659], ["created_at", "2016-12-05 11:05:44.324398"], ["updated_at", "2016-12-05 11:05:44.324398"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"69", "user"=>"659"}}
+  [1m[35mStatus Load (0.5ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 69]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$K3P218Sb6bemkbq4DjbOxOHKPjmTK4tm6P3cJZw44JGw88wYZcGNi"], ["created_at", "2016-12-05 11:05:44.359234"], ["updated_at", "2016-12-05 11:05:44.359234"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 660], ["created_at", "2016-12-05 11:05:44.361656"], ["updated_at", "2016-12-05 11:05:44.361656"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"70", "user"=>"660"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 70]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$ew86Lqk7VEdVeicyKj4SCezxFBPHjftx6LhpaSOm1QBT4PuCFBH7."], ["created_at", "2016-12-05 11:05:52.039716"], ["updated_at", "2016-12-05 11:05:52.039716"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 661], ["created_at", "2016-12-05 11:05:52.069555"], ["updated_at", "2016-12-05 11:05:52.069555"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"71", "user"=>"661"}}
+  [1m[35mStatus Load (0.5ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 661]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 71], ["user_id", 661], ["created_at", "2016-12-05 11:05:52.097334"], ["updated_at", "2016-12-05 11:05:52.097334"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 3.6ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$SUATK9MwW1n.mOORogsnPOrkbHksuQQbHzO623lWI2KR8Ir68iOmK"], ["created_at", "2016-12-05 11:05:52.120443"], ["updated_at", "2016-12-05 11:05:52.120443"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 662], ["created_at", "2016-12-05 11:05:52.122919"], ["updated_at", "2016-12-05 11:05:52.122919"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"72", "user"=>"662"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 72]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 662]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 72], ["user_id", 662], ["created_at", "2016-12-05 11:05:52.127489"], ["updated_at", "2016-12-05 11:05:52.127489"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$CcfP/.R2StaJ.kRDmSZAyebClbXqMx3FR5OqiIODRzJY3HnsaFhuW"], ["created_at", "2016-12-05 11:07:33.669980"], ["updated_at", "2016-12-05 11:07:33.669980"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 663], ["created_at", "2016-12-05 11:07:33.696471"], ["updated_at", "2016-12-05 11:07:33.696471"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"73", "user"=>"663"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 73]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 663]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 73], ["user_id", 663], ["created_at", "2016-12-05 11:07:33.720124"], ["updated_at", "2016-12-05 11:07:33.720124"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$BnQh9QtB7ymROgHBdvW1/.kGPaOYN8ZnBuPqtfr5/Cfi43lvSFM5m"], ["created_at", "2016-12-05 11:07:33.728426"], ["updated_at", "2016-12-05 11:07:33.728426"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 664], ["created_at", "2016-12-05 11:07:33.730765"], ["updated_at", "2016-12-05 11:07:33.730765"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"74", "user"=>"664"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 74]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 664]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 74], ["user_id", 664], ["created_at", "2016-12-05 11:07:33.734907"], ["updated_at", "2016-12-05 11:07:33.734907"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$CPZxJZQZjQRcSQxIUtrowuYAXU1AJJdQl5ZqQL8.db8eqYy1cK4KC"], ["created_at", "2016-12-05 11:09:07.555153"], ["updated_at", "2016-12-05 11:09:07.555153"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 665], ["created_at", "2016-12-05 11:09:07.579457"], ["updated_at", "2016-12-05 11:09:07.579457"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"75", "user"=>"665"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$YtM8xcjOSAhfMx513bgsqOD921hG1BAo5jD8d3k3HXZ.qHiz9V7qS"], ["created_at", "2016-12-05 11:09:07.597804"], ["updated_at", "2016-12-05 11:09:07.597804"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 666], ["created_at", "2016-12-05 11:09:07.600483"], ["updated_at", "2016-12-05 11:09:07.600483"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"76", "user"=>"666"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$DiHtk4TW42q1KR52FrWQf.n8mywqi2MPRiDr3ahQa3wz8En5Dr/YO"], ["created_at", "2016-12-05 11:09:36.240303"], ["updated_at", "2016-12-05 11:09:36.240303"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 667], ["created_at", "2016-12-05 11:09:36.268904"], ["updated_at", "2016-12-05 11:09:36.268904"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"77", "user"=>"667"}}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 151962ms (ActiveRecord: 2.7ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$1aVBAkQK14falPWcOkkREOmt4aV0W3G3KFB.qYu/rNU2sSnB8kAt."], ["created_at", "2016-12-05 11:12:08.244963"], ["updated_at", "2016-12-05 11:12:08.244963"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 668], ["created_at", "2016-12-05 11:12:08.249802"], ["updated_at", "2016-12-05 11:12:08.249802"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"78", "user"=>"668"}}
+Completed 500 Internal Server Error in 743ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$QDXwmGZEhu9jtWbslo8R5O.6naeX.13Z95JBiwSqm6hchpNnFwkj2"], ["created_at", "2016-12-05 11:12:21.749282"], ["updated_at", "2016-12-05 11:12:21.749282"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 669], ["created_at", "2016-12-05 11:12:21.789252"], ["updated_at", "2016-12-05 11:12:21.789252"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"79", "user"=>"669"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$5.TgHtcYgvSvHShcxCjCiOlkUYwperDG0h7iAKzkwzhEVO0RyN4FS"], ["created_at", "2016-12-05 11:12:21.812584"], ["updated_at", "2016-12-05 11:12:21.812584"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 670], ["created_at", "2016-12-05 11:12:21.815127"], ["updated_at", "2016-12-05 11:12:21.815127"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"80", "user"=>"670"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$KiYx3O8wt5zB0LIioLxbV.0OrwaSTukXmndV4gbv2OKs9KywLHu2O"], ["created_at", "2016-12-05 11:12:41.593698"], ["updated_at", "2016-12-05 11:12:41.593698"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 671], ["created_at", "2016-12-05 11:12:41.622831"], ["updated_at", "2016-12-05 11:12:41.622831"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"81", "user"=>"671"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$MfdREQidd3woKKfhxcYdXeSJmKCoHo.Sr10WUYgdEK0R9Hol85ItK"], ["created_at", "2016-12-05 11:12:41.641167"], ["updated_at", "2016-12-05 11:12:41.641167"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 672], ["created_at", "2016-12-05 11:12:41.643820"], ["updated_at", "2016-12-05 11:12:41.643820"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"82", "user"=>"672"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$jLO6mGRLGt1iWIW49mk0iOLLolYKbrdTKRzE05TSGHO4T7I9KcubK"], ["created_at", "2016-12-05 11:12:44.635310"], ["updated_at", "2016-12-05 11:12:44.635310"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 673], ["created_at", "2016-12-05 11:12:51.357796"], ["updated_at", "2016-12-05 11:12:51.357796"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"83", "user"=>"673"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.4ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$70zYndu5hdBdrYy8AdQvPOpKhGPQFHNUhtVrQNE/QS5qBgfmE.NGq"], ["created_at", "2016-12-05 11:15:50.018931"], ["updated_at", "2016-12-05 11:15:50.018931"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 674], ["created_at", "2016-12-05 11:15:51.437378"], ["updated_at", "2016-12-05 11:15:51.437378"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"84", "user"=>"674"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$z2..cruhJrKho0axhPlJ6OOClyK4stozWLUVgIhmJ5O/cpxtLcoea"], ["created_at", "2016-12-05 11:59:07.313190"], ["updated_at", "2016-12-05 11:59:07.313190"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 675], ["created_at", "2016-12-05 11:59:07.367985"], ["updated_at", "2016-12-05 11:59:07.367985"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"85", "user"=>"675"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 675]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 85], ["user_id", 675], ["created_at", "2016-12-05 11:59:07.406119"], ["updated_at", "2016-12-05 11:59:07.406119"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$dp2x0zymgODGmJsu4FSam.S36RME35eZ7ufaIL/9IDEOyoJuylVfG"], ["created_at", "2016-12-05 11:59:07.424186"], ["updated_at", "2016-12-05 11:59:07.424186"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 676], ["created_at", "2016-12-05 11:59:07.426602"], ["updated_at", "2016-12-05 11:59:07.426602"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"86", "user"=>"676"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 86]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 676]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 86], ["user_id", 676], ["created_at", "2016-12-05 11:59:07.431557"], ["updated_at", "2016-12-05 11:59:07.431557"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$uIBo4lgj3sil2pOmpwvkNO8j6QiCAKb5fDyW52Ifti.q90TamhPnK"], ["created_at", "2016-12-05 11:59:32.762899"], ["updated_at", "2016-12-05 11:59:32.762899"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 677], ["created_at", "2016-12-05 11:59:32.789789"], ["updated_at", "2016-12-05 11:59:32.789789"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"87", "user"=>"677"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 87]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 677]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 87], ["user_id", 677], ["created_at", "2016-12-05 11:59:32.814500"], ["updated_at", "2016-12-05 11:59:32.814500"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$CmJW8Su1m06rg.d0vyxsWOe/1g2cun0XgN.RGcjJNKKLp5yGs/xPW"], ["created_at", "2016-12-05 12:00:00.801866"], ["updated_at", "2016-12-05 12:00:00.801866"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 678], ["created_at", "2016-12-05 12:00:00.830435"], ["updated_at", "2016-12-05 12:00:00.830435"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"88", "user"=>"678"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 88]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 678]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 88], ["user_id", 678], ["created_at", "2016-12-05 12:00:00.850694"], ["updated_at", "2016-12-05 12:00:00.850694"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$hCg2B3VwxSbtI8mBUyRgU.NZE1/g5YXkWEdRmri1NokOKER328876"], ["created_at", "2016-12-05 12:00:04.486276"], ["updated_at", "2016-12-05 12:00:04.486276"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 679], ["created_at", "2016-12-05 12:00:04.517128"], ["updated_at", "2016-12-05 12:00:04.517128"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"89", "user"=>"679"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 89]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 679]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 89], ["user_id", 679], ["created_at", "2016-12-05 12:00:04.541793"], ["updated_at", "2016-12-05 12:00:04.541793"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 3.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$RC5wfJ5s90b3V.tCCwfc6OYSTTd/N9odNdvRbhgNS/QW6mvWdunEu"], ["created_at", "2016-12-05 12:00:04.570225"], ["updated_at", "2016-12-05 12:00:04.570225"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 680], ["created_at", "2016-12-05 12:00:04.574547"], ["updated_at", "2016-12-05 12:00:04.574547"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"90", "user"=>"680"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 90]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 680]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 90], ["user_id", 680], ["created_at", "2016-12-05 12:00:04.581231"], ["updated_at", "2016-12-05 12:00:04.581231"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$.XoSvGRtXQxf7uSZ7hzoHuU3wdvkE867kSmzpviM6Vtj4rPOcS8Ri"], ["created_at", "2016-12-05 12:00:10.598533"], ["updated_at", "2016-12-05 12:00:10.598533"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 681], ["created_at", "2016-12-05 12:00:10.624280"], ["updated_at", "2016-12-05 12:00:10.624280"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"91", "user"=>"681"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 91]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 681]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 91], ["user_id", 681], ["created_at", "2016-12-05 12:00:10.648754"], ["updated_at", "2016-12-05 12:00:10.648754"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$E5QJoVVZJUJ6m20SrGbBOejguDHoQDF0kLkMVw3t0qyJ7MXM9CJum"], ["created_at", "2016-12-05 12:00:28.956319"], ["updated_at", "2016-12-05 12:00:28.956319"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 682], ["created_at", "2016-12-05 12:00:28.984989"], ["updated_at", "2016-12-05 12:00:28.984989"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"92", "user"=>"682"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 682]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 92], ["user_id", 682], ["created_at", "2016-12-05 12:00:29.009303"], ["updated_at", "2016-12-05 12:00:29.009303"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 31ms (ActiveRecord: 3.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 92]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$MXUdaKvDKetgjtv7otRvfuoUr9/3goQ084RCcTJUSAiA89ZeUpT.6"], ["created_at", "2016-12-05 12:00:36.044854"], ["updated_at", "2016-12-05 12:00:36.044854"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 683], ["created_at", "2016-12-05 12:00:36.075431"], ["updated_at", "2016-12-05 12:00:36.075431"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"93", "user"=>"683"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 93]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 683]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 93], ["user_id", 683], ["created_at", "2016-12-05 12:00:36.095298"], ["updated_at", "2016-12-05 12:00:36.095298"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 17ms (ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$PtrxNb/QHnIoEFDRD2H6PuO34wb3UcRrYyBisHVzENqPOv2mJONAO"], ["created_at", "2016-12-05 12:00:36.110959"], ["updated_at", "2016-12-05 12:00:36.110959"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 684], ["created_at", "2016-12-05 12:00:36.113427"], ["updated_at", "2016-12-05 12:00:36.113427"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"94", "user"=>"684"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 94]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 684]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 94], ["user_id", 684], ["created_at", "2016-12-05 12:00:36.118043"], ["updated_at", "2016-12-05 12:00:36.118043"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 94]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$R6I8JM1HJJvhmxBAv7MC8eeDQZWBDBPmEQbGS5.X01rfvBLSz3pYm"], ["created_at", "2016-12-05 12:01:28.837812"], ["updated_at", "2016-12-05 12:01:28.837812"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 685], ["created_at", "2016-12-05 12:01:28.865297"], ["updated_at", "2016-12-05 12:01:28.865297"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 685], ["status_id", 95], ["created_at", "2016-12-05 12:01:28.875703"], ["updated_at", "2016-12-05 12:01:28.875703"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"685", "status"=>"95"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 95]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 685]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 95], ["user_id", 685], ["created_at", "2016-12-05 12:01:28.905828"], ["updated_at", "2016-12-05 12:01:28.905828"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$3KKEDJsqFT/nFw8XipnNVuOWB20e6qlzPuZ02tsIp4jxN518.eUie"], ["created_at", "2016-12-05 12:01:28.959672"], ["updated_at", "2016-12-05 12:01:28.959672"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 686], ["created_at", "2016-12-05 12:01:28.962220"], ["updated_at", "2016-12-05 12:01:28.962220"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"96", "user"=>"686"}}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 96]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 686]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 96], ["user_id", 686], ["created_at", "2016-12-05 12:01:28.966604"], ["updated_at", "2016-12-05 12:01:28.966604"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$.W.frqyEOtHT6hlZwErHduv.VchYQ176gnreaYGMaV0d.NXrmx7N."], ["created_at", "2016-12-05 12:01:28.974117"], ["updated_at", "2016-12-05 12:01:28.974117"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 687], ["created_at", "2016-12-05 12:01:28.976535"], ["updated_at", "2016-12-05 12:01:28.976535"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"97", "user"=>"687"}}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 97]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 687]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 97], ["user_id", 687], ["created_at", "2016-12-05 12:01:28.980740"], ["updated_at", "2016-12-05 12:01:28.980740"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 97]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLike Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" IS NULL AND "likes"."status_id" IS NULL) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" IS NULL AND "likes"."status_id" IS NULL) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$8RDwegASg4JxuMupNQyaCuvBual4jo1i3/kIzm6obJA1mYwIXnffm"], ["created_at", "2016-12-05 12:17:04.620542"], ["updated_at", "2016-12-05 12:17:04.620542"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 688], ["created_at", "2016-12-05 12:17:04.651057"], ["updated_at", "2016-12-05 12:17:04.651057"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"98", "user"=>"688"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 98]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 688]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 688 AND "likes"."status_id" = 98) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 98], ["user_id", 688], ["created_at", "2016-12-05 12:17:04.676327"], ["updated_at", "2016-12-05 12:17:04.676327"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 27ms (ActiveRecord: 2.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 98]]
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$YkUnIo5Q2pWCs.h2gIJ2se5eCI4bxAZ06w.ZvQ4Ch8vIUAZz3DlJW"], ["created_at", "2016-12-05 12:17:04.694852"], ["updated_at", "2016-12-05 12:17:04.694852"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 689], ["created_at", "2016-12-05 12:17:04.697269"], ["updated_at", "2016-12-05 12:17:04.697269"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"99", "user"=>"689"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 689]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 689 AND "likes"."status_id" = 99) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 99], ["user_id", 689], ["created_at", "2016-12-05 12:17:04.702519"], ["updated_at", "2016-12-05 12:17:04.702519"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$6YJcvfGGoGD.UFUXbAg.ju0oNMmQrYGNSgQ4crWkeSqt3rQ6aioqa"], ["created_at", "2016-12-05 12:17:04.709847"], ["updated_at", "2016-12-05 12:17:04.709847"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 690], ["created_at", "2016-12-05 12:17:04.712176"], ["updated_at", "2016-12-05 12:17:04.712176"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 690 AND "likes"."status_id" = 100) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 690], ["status_id", 100], ["created_at", "2016-12-05 12:17:04.714802"], ["updated_at", "2016-12-05 12:17:04.714802"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"690", "status"=>"100"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 100]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 690]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 690 AND "likes"."status_id" = 100) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$eRjzKPsdMq1aD/syvHQST.JKUGNeCdA3rEVCGDkDnRxlZ2vliSTbq"], ["created_at", "2016-12-05 12:17:07.853237"], ["updated_at", "2016-12-05 12:17:07.853237"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 691], ["created_at", "2016-12-05 12:17:07.883048"], ["updated_at", "2016-12-05 12:17:07.883048"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"101", "user"=>"691"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 101]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 691]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 691 AND "likes"."status_id" = 101) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 101], ["user_id", 691], ["created_at", "2016-12-05 12:17:07.908841"], ["updated_at", "2016-12-05 12:17:07.908841"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 19ms (ActiveRecord: 2.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$Y0YjyrTOLd/nveWVtPvu7ekT15cycEY4rEm.DSNFj42GG1gPiY4R6"], ["created_at", "2016-12-05 12:17:07.925400"], ["updated_at", "2016-12-05 12:17:07.925400"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 692], ["created_at", "2016-12-05 12:17:07.927870"], ["updated_at", "2016-12-05 12:17:07.927870"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"102", "user"=>"692"}}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 102]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 692]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 692 AND "likes"."status_id" = 102) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 102], ["user_id", 692], ["created_at", "2016-12-05 12:17:07.934115"], ["updated_at", "2016-12-05 12:17:07.934115"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 102]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$jlyH1Y7uTyEd8zWWbuB/aeJrU8yOsWhenOcYmxZ.BfnCiMAIlRTwm"], ["created_at", "2016-12-05 12:17:07.943108"], ["updated_at", "2016-12-05 12:17:07.943108"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 693], ["created_at", "2016-12-05 12:17:07.945508"], ["updated_at", "2016-12-05 12:17:07.945508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 693 AND "likes"."status_id" = 103) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 693], ["status_id", 103], ["created_at", "2016-12-05 12:17:07.947980"], ["updated_at", "2016-12-05 12:17:07.947980"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"693", "status"=>"103"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 103]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 693]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 693 AND "likes"."status_id" = 103) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (203.2ms)[0m  [1mDROP DATABASE IF EXISTS "testing_test"[0m
+  [1m[35m (473.4ms)[0m  CREATE DATABASE "testing_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.5ms)[0m  CREATE TABLE "likes" ("id" serial primary key, "user_id" integer, "status_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (2.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_likes_on_user_id_and_status_id" ON "likes" USING btree ("user_id", "status_id")[0m
+  [1m[35m (6.1ms)[0m  CREATE TABLE "statuses" ("id" serial primary key, "title" character varying, "content" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161205121820')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161004075027')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161004075311')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161004075512')
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mLike Exists (0.6ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" IS NULL AND "likes"."status_id" IS NULL) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLike Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" IS NULL AND "likes"."status_id" IS NULL) LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$6xSizQUKQNY/GzMpgHkEHuFUeRoRJHbRSfabaeLd.PWHzGLkzJDYK"], ["created_at", "2016-12-05 12:20:00.745795"], ["updated_at", "2016-12-05 12:20:00.745795"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 1], ["created_at", "2016-12-05 12:20:00.789763"], ["updated_at", "2016-12-05 12:20:00.789763"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"1", "user"=>"1"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 1 AND "likes"."status_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 1], ["user_id", 1], ["created_at", "2016-12-05 12:20:00.827867"], ["updated_at", "2016-12-05 12:20:00.827867"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 30ms (ActiveRecord: 4.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$6DfdSIe.6LkTglgQCvNE2OcWfoqQS0Qr6VEGmL1mP16D0PBgDGXxG"], ["created_at", "2016-12-05 12:20:00.852046"], ["updated_at", "2016-12-05 12:20:00.852046"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 2], ["created_at", "2016-12-05 12:20:00.856355"], ["updated_at", "2016-12-05 12:20:00.856355"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"2", "user"=>"2"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 2 AND "likes"."status_id" = 2) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 2], ["user_id", 2], ["created_at", "2016-12-05 12:20:00.864279"], ["updated_at", "2016-12-05 12:20:00.864279"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$bZ8l.fYfY2oObAC/TEG.P.d29h83M7MrbgUzQ1mt7iIRyrVsJ88nW"], ["created_at", "2016-12-05 12:20:00.871810"], ["updated_at", "2016-12-05 12:20:00.871810"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 3], ["created_at", "2016-12-05 12:20:00.874291"], ["updated_at", "2016-12-05 12:20:00.874291"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 3 AND "likes"."status_id" = 3) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 3], ["status_id", 3], ["created_at", "2016-12-05 12:20:00.876745"], ["updated_at", "2016-12-05 12:20:00.876745"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"3", "status"=>"3"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 3 AND "likes"."status_id" = 3) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$8xTclyTXPlxMDiKdZPO/KeBKHfE0dXv1DxzIartG5XEzwm.EOelwK"], ["created_at", "2016-12-05 12:20:51.719794"], ["updated_at", "2016-12-05 12:20:51.719794"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 4], ["created_at", "2016-12-05 12:20:51.750863"], ["updated_at", "2016-12-05 12:20:51.750863"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"4", "user"=>"4"}}
+  [1m[35mStatus Load (0.6ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 4 AND "likes"."status_id" = 4) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 4], ["user_id", 4], ["created_at", "2016-12-05 12:20:51.777656"], ["updated_at", "2016-12-05 12:20:51.777656"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 32ms (ActiveRecord: 3.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$NZkMt8HfAQQwHrDqL7Zd0.x4ziNWFMWlSzqABpOz4x9.YxS6bRRfu"], ["created_at", "2016-12-05 12:20:51.794964"], ["updated_at", "2016-12-05 12:20:51.794964"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 5], ["created_at", "2016-12-05 12:20:51.797382"], ["updated_at", "2016-12-05 12:20:51.797382"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"5", "user"=>"5"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 5 AND "likes"."status_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 5], ["user_id", 5], ["created_at", "2016-12-05 12:20:51.802462"], ["updated_at", "2016-12-05 12:20:51.802462"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$zBxOH0vS2etRhpr4wKMVpea18FVCsOzRYAK02F9XQpmn5jQ4FLAbO"], ["created_at", "2016-12-05 12:20:51.809825"], ["updated_at", "2016-12-05 12:20:51.809825"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 6], ["created_at", "2016-12-05 12:20:51.812202"], ["updated_at", "2016-12-05 12:20:51.812202"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 6 AND "likes"."status_id" = 6) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["status_id", 6], ["created_at", "2016-12-05 12:20:51.814633"], ["updated_at", "2016-12-05 12:20:51.814633"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"6", "status"=>"6"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 6 AND "likes"."status_id" = 6) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$sqptML4v81RMyL.YT4xNouiN37cdqGD2KiDw5wpTTyczvyNdqgiUW"], ["created_at", "2016-12-05 12:20:54.784985"], ["updated_at", "2016-12-05 12:20:54.784985"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 7], ["created_at", "2016-12-05 12:20:54.818998"], ["updated_at", "2016-12-05 12:20:54.818998"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 7 AND "likes"."status_id" = 7) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 7], ["status_id", 7], ["created_at", "2016-12-05 12:20:54.827620"], ["updated_at", "2016-12-05 12:20:54.827620"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"7", "status"=>"7"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 7 AND "likes"."status_id" = 7) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 24ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$ohwGI6fI.A5hw6RPsjFzO.u.7Jqhd0ueRA23ggsYtAYU5KtsETqfe"], ["created_at", "2016-12-05 12:20:54.865257"], ["updated_at", "2016-12-05 12:20:54.865257"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 8], ["created_at", "2016-12-05 12:20:54.867643"], ["updated_at", "2016-12-05 12:20:54.867643"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 8 AND "likes"."status_id" = 8) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 8], ["status_id", 8], ["created_at", "2016-12-05 12:20:54.870409"], ["updated_at", "2016-12-05 12:20:54.870409"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "likes"
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"8", "status"=>"8"}}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 8 AND "likes"."status_id" = 8) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$3O9TrEe5JWoJCnq5L8MwCO3Ocn2FIPMbAthCf2.scigghZMo9riB6"], ["created_at", "2016-12-05 12:20:54.887583"], ["updated_at", "2016-12-05 12:20:54.887583"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 9], ["created_at", "2016-12-05 12:20:54.889946"], ["updated_at", "2016-12-05 12:20:54.889946"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"9", "user"=>"9"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 9 AND "likes"."status_id" = 9) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 9], ["user_id", 9], ["created_at", "2016-12-05 12:20:54.895574"], ["updated_at", "2016-12-05 12:20:54.895574"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$Ol8VGO39Y7Y0LWP/exV1VeVXiWnQysmnR.JlEoIh5Ee3FabDRTDFS"], ["created_at", "2016-12-05 12:20:54.903170"], ["updated_at", "2016-12-05 12:20:54.903170"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 10], ["created_at", "2016-12-05 12:20:54.907193"], ["updated_at", "2016-12-05 12:20:54.907193"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"10", "user"=>"10"}}
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 10 AND "likes"."status_id" = 10) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 10], ["user_id", 10], ["created_at", "2016-12-05 12:20:54.916581"], ["updated_at", "2016-12-05 12:20:54.916581"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 10]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$kDe/0CflM2Fc7nte9Ilu7uJSXhOE4c9i7cH1W55TtGoNvsYIyoXI2"], ["created_at", "2016-12-05 12:22:48.961558"], ["updated_at", "2016-12-05 12:22:48.961558"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 11], ["created_at", "2016-12-05 12:22:48.993497"], ["updated_at", "2016-12-05 12:22:48.993497"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"11", "user"=>"11"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 11 AND "likes"."status_id" = 11) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 11], ["user_id", 11], ["created_at", "2016-12-05 12:22:49.015145"], ["updated_at", "2016-12-05 12:22:49.015145"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 19ms (ActiveRecord: 2.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 11]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$0jzpgc0QrF9lgJqJIcNOB.0FQLQTJKpj3giwQ0c9sH6gVzeSWteci"], ["created_at", "2016-12-05 12:22:49.032872"], ["updated_at", "2016-12-05 12:22:49.032872"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 12], ["created_at", "2016-12-05 12:22:49.035224"], ["updated_at", "2016-12-05 12:22:49.035224"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"12", "user"=>"12"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 12 AND "likes"."status_id" = 12) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 12], ["user_id", 12], ["created_at", "2016-12-05 12:22:49.042373"], ["updated_at", "2016-12-05 12:22:49.042373"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$hNbSxSy18goQN7fNGUxwyu7ZeSl/sInLSM14XMJSFcNUqJV9C.1TC"], ["created_at", "2016-12-05 12:22:49.049003"], ["updated_at", "2016-12-05 12:22:49.049003"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 13], ["created_at", "2016-12-05 12:22:49.051849"], ["updated_at", "2016-12-05 12:22:49.051849"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 13 AND "likes"."status_id" = 13) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 13], ["status_id", 13], ["created_at", "2016-12-05 12:22:49.055639"], ["updated_at", "2016-12-05 12:22:49.055639"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"13", "status"=>"13"}}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 13 AND "likes"."status_id" = 13) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$51XnuNZzavQ2Upab2CofaOvzP06qdqWogzIcjlDs.hd.NXgrACB6O"], ["created_at", "2016-12-05 12:22:49.073148"], ["updated_at", "2016-12-05 12:22:49.073148"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 14], ["created_at", "2016-12-05 12:22:49.077267"], ["updated_at", "2016-12-05 12:22:49.077267"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 14 AND "likes"."status_id" = 14) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 14], ["status_id", 14], ["created_at", "2016-12-05 12:22:49.079960"], ["updated_at", "2016-12-05 12:22:49.079960"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"14", "status"=>"14"}}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 14]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 14 AND "likes"."status_id" = 14) LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$.nfSkUXJg04qlJ9aEM2aLOEpeRxaKG2LZXBJTWCyXGz4dv/vUhvp."], ["created_at", "2016-12-05 12:23:01.539975"], ["updated_at", "2016-12-05 12:23:01.539975"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!!!"], ["content", "Coding is fun!"], ["user_id", 15], ["created_at", "2016-12-05 12:23:01.568455"], ["updated_at", "2016-12-05 12:23:01.568455"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 15 AND "likes"."status_id" = 15) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 15], ["status_id", 15], ["created_at", "2016-12-05 12:23:01.580171"], ["updated_at", "2016-12-05 12:23:01.580171"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"
+Processing by LikesController#destroy as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 15]]
+Redirected to http://test.host/statuses.15
+Completed 302 Found in 19ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$GLVaR1/4HzpmbzzzVvpjlep8HegfKzNy/jeXYOvAm9GfMLLBYx0Je"], ["created_at", "2016-12-05 12:23:01.613468"], ["updated_at", "2016-12-05 12:23:01.613468"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!!!"], ["content", "Coding is fun!"], ["user_id", 16], ["created_at", "2016-12-05 12:23:01.615996"], ["updated_at", "2016-12-05 12:23:01.615996"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 16 AND "likes"."status_id" = 16) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 16], ["status_id", 16], ["created_at", "2016-12-05 12:23:01.619680"], ["updated_at", "2016-12-05 12:23:01.619680"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#destroy as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mLike Load (0.3ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "likes" WHERE "likes"."id" = $1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 16]]
+Redirected to http://test.host/statuses.16
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$lzcLOY4nyKqZhkyuaWhACuu6YsJ9ORrAzISzyh7xYdVyfH3BkoZqa"], ["created_at", "2016-12-05 12:23:01.678592"], ["updated_at", "2016-12-05 12:23:01.678592"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 17], ["created_at", "2016-12-05 12:23:01.681252"], ["updated_at", "2016-12-05 12:23:01.681252"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 17 AND "likes"."status_id" = 17) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 17], ["status_id", 17], ["created_at", "2016-12-05 12:23:01.683818"], ["updated_at", "2016-12-05 12:23:01.683818"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"17", "status"=>"17"}}
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 17]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 17 AND "likes"."status_id" = 17) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$WQ3RcEMSqFfdRMlkuTvRZue6UYGw2mwM20hfiky0whqUjFDfsthny"], ["created_at", "2016-12-05 12:23:01.703162"], ["updated_at", "2016-12-05 12:23:01.703162"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 18], ["created_at", "2016-12-05 12:23:01.707561"], ["updated_at", "2016-12-05 12:23:01.707561"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 18 AND "likes"."status_id" = 18) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 18], ["status_id", 18], ["created_at", "2016-12-05 12:23:01.710833"], ["updated_at", "2016-12-05 12:23:01.710833"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"18", "status"=>"18"}}
+  [1m[35mStatus Load (0.8ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 18]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 18 AND "likes"."status_id" = 18) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$5cT8Gsm8TyRdfffe/brV.eZP6MD3AyYgdT8xma/0YmNOngmqA94vK"], ["created_at", "2016-12-05 12:23:01.730499"], ["updated_at", "2016-12-05 12:23:01.730499"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 19], ["created_at", "2016-12-05 12:23:01.732854"], ["updated_at", "2016-12-05 12:23:01.732854"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"19", "user"=>"19"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 19 AND "likes"."status_id" = 19) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 19], ["user_id", 19], ["created_at", "2016-12-05 12:23:01.738476"], ["updated_at", "2016-12-05 12:23:01.738476"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$Tu1Nvgk/zFsgc7SfqCDJcuBBEzBmW0ovKCYVGv.baWrpBIX1m4kJm"], ["created_at", "2016-12-05 12:23:01.747509"], ["updated_at", "2016-12-05 12:23:01.747509"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 20], ["created_at", "2016-12-05 12:23:01.749922"], ["updated_at", "2016-12-05 12:23:01.749922"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"20", "user"=>"20"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 20]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 20 AND "likes"."status_id" = 20) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 20], ["user_id", 20], ["created_at", "2016-12-05 12:23:01.756346"], ["updated_at", "2016-12-05 12:23:01.756346"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$gYPy6pyitAquyYKoEODqrOTu4PYzU/I0W1wgB7PLRwlfBlePtCUSW"], ["created_at", "2016-12-05 12:23:19.984860"], ["updated_at", "2016-12-05 12:23:19.984860"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!!!"], ["content", "Coding is fun!"], ["user_id", 21], ["created_at", "2016-12-05 12:23:20.017631"], ["updated_at", "2016-12-05 12:23:20.017631"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 21 AND "likes"."status_id" = 21) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 21], ["status_id", 21], ["created_at", "2016-12-05 12:23:20.028560"], ["updated_at", "2016-12-05 12:23:20.028560"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#destroy as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "likes" WHERE "likes"."id" = $1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 21]]
+Redirected to http://test.host/statuses/21
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$l9eAxtj8.oyWod1gdjMG8Ouq0TbyNxsX/fgM9Y.mugRumHNm7okJC"], ["created_at", "2016-12-05 12:23:20.051299"], ["updated_at", "2016-12-05 12:23:20.051299"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!!!"], ["content", "Coding is fun!"], ["user_id", 22], ["created_at", "2016-12-05 12:23:20.064467"], ["updated_at", "2016-12-05 12:23:20.064467"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 22 AND "likes"."status_id" = 22) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["user_id", 22], ["status_id", 22], ["created_at", "2016-12-05 12:23:20.067306"], ["updated_at", "2016-12-05 12:23:20.067306"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"
+Processing by LikesController#destroy as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mLike Load (1.0ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 22]]
+Redirected to http://test.host/statuses/22
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$fuxj3iFhmmtG4zCVoqEYUe52woL0WHsN2K7DfN7uDf/5IMkq0cz5C"], ["created_at", "2016-12-05 12:23:20.081419"], ["updated_at", "2016-12-05 12:23:20.081419"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 23], ["created_at", "2016-12-05 12:23:20.084564"], ["updated_at", "2016-12-05 12:23:20.084564"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"23", "user"=>"23"}}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 23 AND "likes"."status_id" = 23) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["status_id", 23], ["user_id", 23], ["created_at", "2016-12-05 12:23:20.093778"], ["updated_at", "2016-12-05 12:23:20.093778"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$EI1QkFk8Yp4UJV4lnnhXJu8NYQ..QsTaUmW/7J9c95vthgPldF7Ia"], ["created_at", "2016-12-05 12:23:20.100427"], ["updated_at", "2016-12-05 12:23:20.100427"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 24], ["created_at", "2016-12-05 12:23:20.102798"], ["updated_at", "2016-12-05 12:23:20.102798"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"status"=>"24", "user"=>"24"}}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 24]]
+  [1m[36m (0.7ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 24 AND "likes"."status_id" = 24) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("status_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["status_id", 24], ["user_id", 24], ["created_at", "2016-12-05 12:23:20.113007"], ["updated_at", "2016-12-05 12:23:20.113007"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 24]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$jRoOIiTlTO4Xnjpxx4FN.eJx0KgoEwhp5AU.PQgyMXFtmcvXGPkqi"], ["created_at", "2016-12-05 12:23:20.121543"], ["updated_at", "2016-12-05 12:23:20.121543"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 25], ["created_at", "2016-12-05 12:23:20.124531"], ["updated_at", "2016-12-05 12:23:20.124531"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 25 AND "likes"."status_id" = 25) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 25], ["status_id", 25], ["created_at", "2016-12-05 12:23:20.127318"], ["updated_at", "2016-12-05 12:23:20.127318"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"25", "status"=>"25"}}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 25]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 25 AND "likes"."status_id" = 25) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ping@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "ping"], ["email", "ping@na.com"], ["password_digest", "$2a$04$ajMqkNLuSUVeI3DynMAi6.jrr0Cvyihe4MBuAM0rcTMmFbeBALsT6"], ["created_at", "2016-12-05 12:23:20.145234"], ["updated_at", "2016-12-05 12:23:20.145234"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "hello world!"], ["content", "Coding is fun!"], ["user_id", 26], ["created_at", "2016-12-05 12:23:20.147640"], ["updated_at", "2016-12-05 12:23:20.147640"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Exists (0.3ms)[0m  SELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 26 AND "likes"."status_id" = 26) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "likes" ("user_id", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 26], ["status_id", 26], ["created_at", "2016-12-05 12:23:20.150110"], ["updated_at", "2016-12-05 12:23:20.150110"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+Processing by LikesController#create as HTML
+  Parameters: {"like"=>{"user"=>"26", "status"=>"26"}}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 26]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 26]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Exists (1.3ms)[0m  [1mSELECT  1 AS one FROM "likes" WHERE ("likes"."user_id" = 26 AND "likes"."status_id" = 26) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK

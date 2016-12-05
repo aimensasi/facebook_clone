@@ -35,7 +35,7 @@ RSpec.describe LikesController, type: :controller do
       end
 
       it 'displays flash alert message' do
-        post :create, :like=> {user: user, status: status}
+        post :create, :like => {user: user, status: status}
         expect(response).to redirect_to root_path
         expect(flash[:alert]).to eq "You liked before!"
       end
