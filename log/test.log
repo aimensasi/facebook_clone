@@ -5924,3 +5924,1849 @@ Processing by SessionsController#create as HTML
   Rendered sessions/new.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
   [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$e9trrrGcTE1kwS6au925sONUvhqJAzwCgXJQON0W7fUeBoGiUCTJS"], ["created_at", "2016-12-05 10:16:24.551865"], ["updated_at", "2016-12-05 10:16:24.551865"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$n1mmYoYjGrzjsJOV0wtV1ec4zaN1UnJswfNc3/H21bu9OyfRhi4U6"], ["created_at", "2016-12-05 10:16:24.561514"], ["updated_at", "2016-12-05 10:16:24.561514"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$OTL6y9zKeVkLFXBRjxG2O.lQUO1ZuoHtLT39ypr5e/gnUVRDF5PDm"], ["created_at", "2016-12-05 10:16:24.569345"], ["updated_at", "2016-12-05 10:16:24.569345"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$K0S5fwZKXpEX6CCwElx9K.LZZfszCT7SbpCtueqnhdPql3Z5xTorC"], ["created_at", "2016-12-05 10:17:19.938816"], ["updated_at", "2016-12-05 10:17:19.938816"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$KZUWzp2vDIw4VL.Tn5PjneN3wKXcrnMDt/I5DWfKBXotLsZiHqlDm"], ["created_at", "2016-12-05 10:17:19.977522"], ["updated_at", "2016-12-05 10:17:19.977522"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$73t8qPuGLucEYAkl3xjtj.inyPrW5jWqOeBJvzrObSfa1/L3AOZeW"], ["created_at", "2016-12-05 10:17:19.986621"], ["updated_at", "2016-12-05 10:17:19.986621"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.9ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$R1zrqfr429KDqExCUPoXeu3vdMUtUDHOQS2E/OsJLb85vDe6m3nBm"], ["created_at", "2016-12-05 10:17:46.529141"], ["updated_at", "2016-12-05 10:17:46.529141"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 22.0ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$XnTzbxcmXQsFrbMlOPbSb.aN4dXPq2fv4F6StjIK1sU38eh4poLqy"], ["created_at", "2016-12-05 10:17:46.580323"], ["updated_at", "2016-12-05 10:17:46.580323"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Y5RGQC8O.0dAsuFxC4KlZucbyHwRKcDgZEudFneYBbUFlloKls/hC"], ["created_at", "2016-12-05 10:17:46.592651"], ["updated_at", "2016-12-05 10:17:46.592651"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$K65bTruLRs9LzAeAyS4x5OgwIGDXnQxolXWdakLLdriRCuL.7Sedy"], ["created_at", "2016-12-05 10:18:06.248053"], ["updated_at", "2016-12-05 10:18:06.248053"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$kanWN9FVKP1YQ.xwLURoXeLf8wBbf.ar6yv31G3pOfWpF7ZjEOApi"], ["created_at", "2016-12-05 10:18:06.307681"], ["updated_at", "2016-12-05 10:18:06.307681"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$jbAhIGH77EhYzWfXWjXRDuOCBSUFHUtMvncoWYtzGhfjhwKR4/uka"], ["created_at", "2016-12-05 10:18:06.314761"], ["updated_at", "2016-12-05 10:18:06.314761"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$yyh5na/3KVdiNuiQ92QqA.TcVUfqxzwOuukTZv23Ytnq9KOoF23xq"], ["created_at", "2016-12-05 10:18:06.321382"], ["updated_at", "2016-12-05 10:18:06.321382"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$eZbkt0JbeJrb6b5Yrg1yvur6CqIsEwztvIKWtDEIlEyIwsPw6PvZC"], ["created_at", "2016-12-05 10:18:06.351180"], ["updated_at", "2016-12-05 10:18:06.351180"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$lG5zSm.g5sYqK.i8qqCO7u7tB8KTS0kPoe59VYjHmB8aApx0I83ZC"], ["created_at", "2016-12-05 10:18:06.388925"], ["updated_at", "2016-12-05 10:18:06.388925"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$6X8930PrQYjJDxKwJz.1buhdY555qm8g5xuF3a09c.LSSCcH1PNVO"], ["created_at", "2016-12-05 10:18:06.405106"], ["updated_at", "2016-12-05 10:18:06.405106"]]
+  [1m[36m (1.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$T.I1RmcE24iXPHGqNUcx8uQl1yQ9Y7zBJs1B8lvEyKTfNJMBr8.vy"], ["created_at", "2016-12-05 10:18:23.544325"], ["updated_at", "2016-12-05 10:18:23.544325"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 14.5ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$I.N/W7e2VxrBW583YxlfP.qh8aiA/rzAuMprMdWFgoE9VIoM.qr3O"], ["created_at", "2016-12-05 10:18:23.584866"], ["updated_at", "2016-12-05 10:18:23.584866"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$uYX8qZ0u.5tPUAp9nwfQxOjQnJhEcgwurptRDdurLCXOXK48xQawO"], ["created_at", "2016-12-05 10:18:23.592547"], ["updated_at", "2016-12-05 10:18:23.592547"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$WvwwYvZSPQ/V97ImxotasuL/jZK031TbnHZ2qVlrGh.DYmdccUmoa"], ["created_at", "2016-12-05 10:18:23.601586"], ["updated_at", "2016-12-05 10:18:23.601586"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$AuVDuuTxcFzYUr/dTHGaeuUNVUP5cHZkIlcjOmE2RFx9qGBDGB.WS"], ["created_at", "2016-12-05 10:18:23.650770"], ["updated_at", "2016-12-05 10:18:23.650770"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$m7cPyeSFlejOsSWGBu8GleaYlf8GurUUJhqUCGD0gGXRLm387oLyu"], ["created_at", "2016-12-05 10:19:57.297431"], ["updated_at", "2016-12-05 10:19:57.297431"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"303"}}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$YFuwMmsZswI3.OlW4vXYE.Ck3vOs.O1U6GhXbEaWm84ab5adfyoIC"], ["created_at", "2016-12-05 10:19:57.345717"], ["updated_at", "2016-12-05 10:19:57.345717"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"304"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$s7au7DumjcnyPiPsXRcRAeEvNvXqBTzMwWsfSpcNxDypRSeOOMe/m"], ["created_at", "2016-12-05 10:19:57.360448"], ["updated_at", "2016-12-05 10:19:57.360448"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Zn0kbbTzo3oN.GSxhpZfC.a5UX9Rmoa3Sf1GwYx7SfkoJmCC.6CfO"], ["created_at", "2016-12-05 10:19:57.380204"], ["updated_at", "2016-12-05 10:19:57.380204"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$cLKXr6GGNyy3VIpKBYhE5OsVSJxk3nWr955mV9wBih3.8XzR6phDu"], ["created_at", "2016-12-05 10:19:57.392862"], ["updated_at", "2016-12-05 10:19:57.392862"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$KBcyTHa/L2ATXIyzjZ76T.zOgfEnpa7jS8mNXi5LPVtt9WnQ43jia"], ["created_at", "2016-12-05 10:21:14.225264"], ["updated_at", "2016-12-05 10:21:14.225264"]]
+  [1m[35m (0.7ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 16.5ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$HOmBiPJB0v1gi4A1ytGw6uO8msuMW/r/D40gdeF4NyONBC0sQ9RD."], ["created_at", "2016-12-05 10:21:14.264021"], ["updated_at", "2016-12-05 10:21:14.264021"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$qJ0jxoLh5DtBbPFC7GzyE.X8AeI3Dwl4ZOaH8RfACMCrWdFQJCzMq"], ["created_at", "2016-12-05 10:21:14.272300"], ["updated_at", "2016-12-05 10:21:14.272300"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$xFSBisBLVLXohLPCQ3ISQey0aLcmq/63xgai21SAlftOhuhKN4q.C"], ["created_at", "2016-12-05 10:21:14.280830"], ["updated_at", "2016-12-05 10:21:14.280830"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"311"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 311], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:14.285521"], ["updated_at", "2016-12-05 10:21:14.285521"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/13
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$N54hfAlJgSubJL1I6A4BbuZJD2H5nUYq2zSKkdARHCpezeHruY.OK"], ["created_at", "2016-12-05 10:21:14.297899"], ["updated_at", "2016-12-05 10:21:14.297899"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"312"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 312], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:14.304867"], ["updated_at", "2016-12-05 10:21:14.304867"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/14
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$KkZ387tqpRneA3AtAIMMz.AiHLLLlhWD8mf2PfenDEjARHTbinTKa"], ["created_at", "2016-12-05 10:21:25.836118"], ["updated_at", "2016-12-05 10:21:25.836118"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"313"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 313], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:25.855003"], ["updated_at", "2016-12-05 10:21:25.855003"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/15
+Completed 302 Found in 15ms (ActiveRecord: 2.5ms)
+  [1m[35mStatus Load (0.5ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$JdQOnXR/oKybYBdUu9PsYuxyAqlEvdhk56jM0RbXiX4tNFClvWBty"], ["created_at", "2016-12-05 10:21:25.864528"], ["updated_at", "2016-12-05 10:21:25.864528"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"314"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 314], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:25.874616"], ["updated_at", "2016-12-05 10:21:25.874616"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/16
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$rrKljPf31C6.OS9mHLjOsOi6lJPNgxfUffPXgymF/KWMhux/S8aJW"], ["created_at", "2016-12-05 10:21:25.881894"], ["updated_at", "2016-12-05 10:21:25.881894"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"315"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Q84g1ocTSJQa4RwrEINzYesNP/ZSC1pImx2lzObc6pxk8u28CGM3i"], ["created_at", "2016-12-05 10:21:25.916782"], ["updated_at", "2016-12-05 10:21:25.916782"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"316"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$dffkPfxsJJL6av6ytHUaY.jArZp6JMXDcIoUJFMqqZ3eT90A0TSui"], ["created_at", "2016-12-05 10:21:25.930641"], ["updated_at", "2016-12-05 10:21:25.930641"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$aN0IWHfoW2QoQHXlO5k2auUcQLzJ5Re.9QiH3V.w/CSsoFJTPCJ4e"], ["created_at", "2016-12-05 10:21:25.945558"], ["updated_at", "2016-12-05 10:21:25.945558"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$6i4taylPiVOqn8COTD8/PuQr5PWfCoNY9c7r.kqGECMeGVFFeks7K"], ["created_at", "2016-12-05 10:21:25.954547"], ["updated_at", "2016-12-05 10:21:25.954547"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$/sYHtzq0U84Hwsp7dZjfBOV8Yqh2k5ddlwZ6mZGgdPsCK9HSF8/cC"], ["created_at", "2016-12-05 10:21:52.597618"], ["updated_at", "2016-12-05 10:21:52.597618"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"320"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 14.7ms | ActiveRecord: 2.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$qtbAq6pcAWkIi2Bh1781DObDArHGJpp7bLRrRc133VEzelDCyXyHe"], ["created_at", "2016-12-05 10:21:52.642587"], ["updated_at", "2016-12-05 10:21:52.642587"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"321"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$w.z/bayioiRkekRgxpMrcOTgxKNzVsPCwraqynyDGDaSXpnbmpQXy"], ["created_at", "2016-12-05 10:21:52.656335"], ["updated_at", "2016-12-05 10:21:52.656335"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"322"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 322], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:52.665551"], ["updated_at", "2016-12-05 10:21:52.665551"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/17
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$YtCj9mosoS52SQYqswQghOk4U9Wjzj0C47gRQKV.9w3TrnBHzcIlG"], ["created_at", "2016-12-05 10:21:52.673631"], ["updated_at", "2016-12-05 10:21:52.673631"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"323"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 323], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:21:52.677700"], ["updated_at", "2016-12-05 10:21:52.677700"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/18
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Y3rYjxmxbVhW/728mzBZ5O93/88DYoDMNAssLKzP9WAAVnwOMib1y"], ["created_at", "2016-12-05 10:21:52.690858"], ["updated_at", "2016-12-05 10:21:52.690858"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$d2cGQXMCahBkXpC3/Br3juLW8se7AJpVphgZez7zMVn5UIdcaZb8i"], ["created_at", "2016-12-05 10:21:52.698540"], ["updated_at", "2016-12-05 10:21:52.698540"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$xunE0R24hdvRQCytIl6dTuaxrUuh2M/hkwyRvRIxTYXhTtkBdHZ3G"], ["created_at", "2016-12-05 10:21:52.710163"], ["updated_at", "2016-12-05 10:21:52.710163"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$EoRsgipf2N2uaZyLF/yBO.Po8QJLoPgQDN8fR70rZEY1eC6bTKrxu"], ["created_at", "2016-12-05 10:23:38.089589"], ["updated_at", "2016-12-05 10:23:38.089589"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 12.6ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$wN/DYAhMVNVfa0jceJlc2eKPEGv7kbioCYvDDZg.vKcYcJUkAemG."], ["created_at", "2016-12-05 10:23:38.125882"], ["updated_at", "2016-12-05 10:23:38.125882"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$R4QNSHcT/P/p4mkEMPJnfOKg9GVZBmkxCkX5sh7In8CUEJFL73SLq"], ["created_at", "2016-12-05 10:23:38.136421"], ["updated_at", "2016-12-05 10:23:38.136421"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$027Wb/KHn/CpDxjIG9rXk.hbJgl.5mpjaxoF2svTUmCCri1yz44nu"], ["created_at", "2016-12-05 10:23:38.144709"], ["updated_at", "2016-12-05 10:23:38.144709"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"330"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$OcrmlAIpWofQCDFUMkH4uu3Gj2XG.J6mo.RVTN.BM02O5zaI/dnpS"], ["created_at", "2016-12-05 10:23:38.160360"], ["updated_at", "2016-12-05 10:23:38.160360"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"331"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$zeIuLzWjhTsNIA.DLCowRunZs1v5tfwLUL03vbwqU4rsC9Z6/B4IG"], ["created_at", "2016-12-05 10:23:38.172744"], ["updated_at", "2016-12-05 10:23:38.172744"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"332"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 332], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:23:38.175991"], ["updated_at", "2016-12-05 10:23:38.175991"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/19
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35mStatus Load (0.5ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$NPSLP98fKqQw9K.LtbFGK.7LdXcflwoQ5GAiszOLPdmJy0BEwWWnS"], ["created_at", "2016-12-05 10:23:38.189677"], ["updated_at", "2016-12-05 10:23:38.189677"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"333"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 333], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:23:38.195737"], ["updated_at", "2016-12-05 10:23:38.195737"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/20
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$ac1qQvZDFNjv/m2/wwcH9e890yUul3XwJVf2ZqM3jPENer3Ew4F/y"], ["created_at", "2016-12-05 10:23:41.247218"], ["updated_at", "2016-12-05 10:23:41.247218"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"334"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 16.4ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$ypOCo5WtsSQrhlvgXefmzuKWP2rZ5pWaQu.LtrxIX26lZ9OM/LzU."], ["created_at", "2016-12-05 10:23:41.298946"], ["updated_at", "2016-12-05 10:23:41.298946"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"335"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$bhYsEXHhLMoGNwxXT7ClOuv5Mt.oK7U817HhVGFuLsUKrx49LgxkK"], ["created_at", "2016-12-05 10:23:41.312337"], ["updated_at", "2016-12-05 10:23:41.312337"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"336"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 336], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:23:41.319767"], ["updated_at", "2016-12-05 10:23:41.319767"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/21
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$aprtgxvycu3QoKkmwsA1feBJij//NM/71RM2k/mfxmYQzf1ooAjsu"], ["created_at", "2016-12-05 10:23:41.327979"], ["updated_at", "2016-12-05 10:23:41.327979"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"337"}}
+  [1m[35m (0.8ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 337], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:23:41.334320"], ["updated_at", "2016-12-05 10:23:41.334320"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/22
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[36mStatus Load (0.5ms)[0m  [1mSELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$/Npw/s6P6HiWaErybAGbCuVzNmoOdFUIWbkn6/3p.4nos0B3g.t6m"], ["created_at", "2016-12-05 10:23:41.346564"], ["updated_at", "2016-12-05 10:23:41.346564"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$n2SHbkeBvt6wwufd3/oQGuVLhZIzT2upnwXbdAc0i8.xkMXjD1xfO"], ["created_at", "2016-12-05 10:23:41.359856"], ["updated_at", "2016-12-05 10:23:41.359856"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$KISjA28THjpoAlKOzuX4ueHAWpAAGn14e/x5LuEgdKr/P73QZeGBi"], ["created_at", "2016-12-05 10:23:41.368193"], ["updated_at", "2016-12-05 10:23:41.368193"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$LfzHoA4Za07gY6rTENh/neUADWz.8oszRxsHeGt0u4rsCTMgmyhBy"], ["created_at", "2016-12-05 10:23:41.378681"], ["updated_at", "2016-12-05 10:23:41.378681"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 341], ["created_at", "2016-12-05 10:23:41.382074"], ["updated_at", "2016-12-05 10:23:41.382074"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$9/XBn.ys./jlxwIoP20/fO2xHDYhfOJgQUnzlRkGRCeqkJ0/SaGhe"], ["created_at", "2016-12-05 10:23:41.440973"], ["updated_at", "2016-12-05 10:23:41.440973"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 342], ["created_at", "2016-12-05 10:23:41.443695"], ["updated_at", "2016-12-05 10:23:41.443695"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$3b6sZ8BkxHkyjmU6HjrAyOrRoeDa/5jHQHjSkmVfZXhYHHBirgiSa"], ["created_at", "2016-12-05 10:24:43.006685"], ["updated_at", "2016-12-05 10:24:43.006685"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 12.4ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$To6V7XAR/LqyFYHfXVl34.g5rZOF5ehxnAXwOHKmFuckkQAjx25Cm"], ["created_at", "2016-12-05 10:24:43.047723"], ["updated_at", "2016-12-05 10:24:43.047723"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Jyn6pa0MrLv.m4qtoEyIGeo4k3N5bnaIeYknZsMEtzVysQ1LiFWNC"], ["created_at", "2016-12-05 10:24:43.055570"], ["updated_at", "2016-12-05 10:24:43.055570"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$xBgzT0ts9Br0XswAGlk0gePtPkkX26oXTmG92jBkDtIwe3YhchkuG"], ["created_at", "2016-12-05 10:24:43.064214"], ["updated_at", "2016-12-05 10:24:43.064214"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 346], ["created_at", "2016-12-05 10:24:43.066551"], ["updated_at", "2016-12-05 10:24:43.066551"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"346"}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 346]]
+  Rendered statuses/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$96NsDlL7fVj9hUZKHwXaT.YJufE69ljLfmzNVab9VwueWE3OLL6hW"], ["created_at", "2016-12-05 10:24:43.091918"], ["updated_at", "2016-12-05 10:24:43.091918"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 347], ["created_at", "2016-12-05 10:24:43.094157"], ["updated_at", "2016-12-05 10:24:43.094157"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"347"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 347]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$8B/SXRkCuHwTS/Dvihb7Zep5BVaYXd9iKYN9t2UoBVnT1EM8PGXmO"], ["created_at", "2016-12-05 10:24:43.103179"], ["updated_at", "2016-12-05 10:24:43.103179"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"348"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$FZYATl2q61RiDbkR/0kq3eslqtFSb9H9fGbfG1LrVcnLqEoMikKWO"], ["created_at", "2016-12-05 10:24:43.123272"], ["updated_at", "2016-12-05 10:24:43.123272"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"349"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$jC2hT7FjlcXedETWukMBF.WSZ2HnHyT7Dk8VY9ofybOifcWexvvP2"], ["created_at", "2016-12-05 10:24:43.136138"], ["updated_at", "2016-12-05 10:24:43.136138"]]
+  [1m[35m (0.9ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"350"}}
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 350], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:24:43.143500"], ["updated_at", "2016-12-05 10:24:43.143500"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/23
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$60mmI5nShikg9pJe2uRE1.jwzSzzeAd.99sKU3rJrkujR7HZtqP5e"], ["created_at", "2016-12-05 10:24:43.156212"], ["updated_at", "2016-12-05 10:24:43.156212"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"351"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 351], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:24:43.163505"], ["updated_at", "2016-12-05 10:24:43.163505"]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/24
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$RHa4c6GDpW25K6msW/nSreatmuySBw2OThPa5vEgY.XDWl7akxCoW"], ["created_at", "2016-12-05 10:26:28.686981"], ["updated_at", "2016-12-05 10:26:28.686981"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 11.6ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$uDIscR9yyDtq/pGYddJFzO.LY04GaZDypDUbOCD6KH3/yFxLqnAyC"], ["created_at", "2016-12-05 10:26:28.726945"], ["updated_at", "2016-12-05 10:26:28.726945"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$m9Pf9XFmBegCFevOybQCW.OOlv9iVzD5ZYAsiwISv0COjzO6zJtNO"], ["created_at", "2016-12-05 10:26:28.734878"], ["updated_at", "2016-12-05 10:26:28.734878"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$FlOuR7CSKd9wKqZX5j/60.wLdIScbB.iPCubdwr6pa8c/0pWdyaR."], ["created_at", "2016-12-05 10:26:28.744127"], ["updated_at", "2016-12-05 10:26:28.744127"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"355"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$PKH4fFqdXAZJ91grNC52vOjhcPwBDSKbuil0Q6diKkvGaDorBSkz2"], ["created_at", "2016-12-05 10:26:28.762017"], ["updated_at", "2016-12-05 10:26:28.762017"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"356"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$fTac0VwWqu0XJWsSbCbBeuIIDS.egp4Ehy/sZV7gjbokFOwrTi7JC"], ["created_at", "2016-12-05 10:26:28.779584"], ["updated_at", "2016-12-05 10:26:28.779584"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"357"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 357], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:28.786157"], ["updated_at", "2016-12-05 10:26:28.786157"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/25
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$JGV5wcnM87hQMYdYt9rhEOlvxPcykplgbk3KtehFU7rEQZIbX4M9K"], ["created_at", "2016-12-05 10:26:28.793403"], ["updated_at", "2016-12-05 10:26:28.793403"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"358"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 358], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:28.796548"], ["updated_at", "2016-12-05 10:26:28.796548"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/26
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$GAe24KMGetE7RppiBYyE5uTkJ06zc5YYP5abopJfh56uizqoCCjuu"], ["created_at", "2016-12-05 10:26:28.807950"], ["updated_at", "2016-12-05 10:26:28.807950"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 359], ["created_at", "2016-12-05 10:26:28.810701"], ["updated_at", "2016-12-05 10:26:28.810701"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"359"}
+  [1m[36mStatus Load (0.7ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 359]]
+  Rendered statuses/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$kP3Vumqo2611a.7Ci.ITHuxbXeO7ZhHlJ81l7GGFUx9OzvtGpzwAG"], ["created_at", "2016-12-05 10:26:28.832324"], ["updated_at", "2016-12-05 10:26:28.832324"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 360], ["created_at", "2016-12-05 10:26:28.834440"], ["updated_at", "2016-12-05 10:26:28.834440"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"360"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 360]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$U07lE/.MgAqEjOiakAl32O8WaSZKWYc3yftRl6KKbKIi17FVrbfRK"], ["created_at", "2016-12-05 10:26:38.645645"], ["updated_at", "2016-12-05 10:26:38.645645"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 16.7ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$qGa.Hvcicz2WN0zzwTHs3OCOb66DlWKwPh8xOLz4jWmUoc4zlT1UG"], ["created_at", "2016-12-05 10:26:38.684507"], ["updated_at", "2016-12-05 10:26:38.684507"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$knvkuN2EsbzYl2Fp3ib/rOuJ6sBKz997ylGzz6oTXZN0izaXVloZK"], ["created_at", "2016-12-05 10:26:38.696076"], ["updated_at", "2016-12-05 10:26:38.696076"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Jh2/a6XNYtq7QAUSVWm/L.cyRqwnBrKzYewgKucVaMirrF/nSyWQy"], ["created_at", "2016-12-05 10:26:38.705797"], ["updated_at", "2016-12-05 10:26:38.705797"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 364], ["created_at", "2016-12-05 10:26:38.708158"], ["updated_at", "2016-12-05 10:26:38.708158"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"364"}, "id"=>"364"}
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 364]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5  [["user_id", 364], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:26:38.717768"], ["id", 364]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/364
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 364]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$WcNdk4qC0RrrJr60QNVcluMp2vgWTOXkcjEZF.yktT9ezxSmQ9oXG"], ["created_at", "2016-12-05 10:26:38.729281"], ["updated_at", "2016-12-05 10:26:38.729281"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 365], ["created_at", "2016-12-05 10:26:38.731302"], ["updated_at", "2016-12-05 10:26:38.731302"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"365"}, "id"=>"365"}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 365]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5  [["user_id", 365], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:26:38.735278"], ["id", 365]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/365
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 365]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$xLIxABGJeM0gDTTvt5pitefqKs.gdp78kaHQuowzfmDHRmSlEuYxS"], ["created_at", "2016-12-05 10:26:38.746651"], ["updated_at", "2016-12-05 10:26:38.746651"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 366], ["created_at", "2016-12-05 10:26:38.748731"], ["updated_at", "2016-12-05 10:26:38.748731"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day1", "content"=>"Banana Chocolate Smoothie", "user_id"=>"366"}, "id"=>"366"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 366]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$hnWtyADjsFvn.FQegIrfP.3H.vhxIkj4ndbHs5WADShTYB6p5ogpq"], ["created_at", "2016-12-05 10:26:38.770377"], ["updated_at", "2016-12-05 10:26:38.770377"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"367"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$lTf2nui1rYDwYrOmrqWOEOys.BHYzVYkLxoZZBpUijKzxJcDwEeF2"], ["created_at", "2016-12-05 10:26:38.783641"], ["updated_at", "2016-12-05 10:26:38.783641"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"368"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$40tmjCMGkuiO9arcm0ipGOYN7652i1mhTtRJsoNPgUc0Sk54DxQt."], ["created_at", "2016-12-05 10:26:38.798321"], ["updated_at", "2016-12-05 10:26:38.798321"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"369"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 369], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:38.804334"], ["updated_at", "2016-12-05 10:26:38.804334"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/27
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Rt.6ktDs8vbYU70Mk7r6VuukYSpFBRxI8TZKD9N5pp9JAqeyvILf2"], ["created_at", "2016-12-05 10:26:38.812405"], ["updated_at", "2016-12-05 10:26:38.812405"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"370"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 370], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:38.818414"], ["updated_at", "2016-12-05 10:26:38.818414"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/28
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+  [1m[36mStatus Load (0.7ms)[0m  [1mSELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$5bmRhx69temsu3BandWYp.c.vljbQOIod1PeIN0930yym0E6d8TFG"], ["created_at", "2016-12-05 10:26:38.831035"], ["updated_at", "2016-12-05 10:26:38.831035"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 371], ["created_at", "2016-12-05 10:26:38.833068"], ["updated_at", "2016-12-05 10:26:38.833068"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"371"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 371]]
+  Rendered statuses/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$AJr2rsoDscz./OTWagVi3.J3bPuNKjrULNZxxWT2/lfWgbhkBAWn2"], ["created_at", "2016-12-05 10:26:38.846752"], ["updated_at", "2016-12-05 10:26:38.846752"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 372], ["created_at", "2016-12-05 10:26:38.848757"], ["updated_at", "2016-12-05 10:26:38.848757"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"372"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 372]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$/35He/C1jwP/IHt9Wj/6Ee.hvqy2JfK.0R.BCVt4G7xSJyItwxq/O"], ["created_at", "2016-12-05 10:26:58.847192"], ["updated_at", "2016-12-05 10:26:58.847192"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 373], ["created_at", "2016-12-05 10:26:58.862717"], ["updated_at", "2016-12-05 10:26:58.862717"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"373"}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 373]]
+  Rendered statuses/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$abnH2hDb6q8bcx7FrG6aCuXuJ06B9sAV9YygRiwqtnDqTtoy1Ynrm"], ["created_at", "2016-12-05 10:26:58.894787"], ["updated_at", "2016-12-05 10:26:58.894787"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 374], ["created_at", "2016-12-05 10:26:58.897011"], ["updated_at", "2016-12-05 10:26:58.897011"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"374"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 374]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$zfsN29B4C6aa3xptEQn3n.4qJqJltdChyIzCpCcarLk5z9mHVfJI6"], ["created_at", "2016-12-05 10:26:58.909120"], ["updated_at", "2016-12-05 10:26:58.909120"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"375"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$9RzdJM64I1Q4n3LbXbc3u.Uy/cMnst0PJcuCDZuhLijde7NjRQsl6"], ["created_at", "2016-12-05 10:26:58.927937"], ["updated_at", "2016-12-05 10:26:58.927937"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"376"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$69hAxVeoJ8IFchU9vFKgdeWSfFn2TfgyJD.srz4mPk4lO3bXXrWNO"], ["created_at", "2016-12-05 10:26:58.942044"], ["updated_at", "2016-12-05 10:26:58.942044"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"377"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 377], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:58.948484"], ["updated_at", "2016-12-05 10:26:58.948484"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/29
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$J3vSorQpjbbzDIJWjKsnA.3zJRNSVRWKqixFAYld3172EyYjujdv2"], ["created_at", "2016-12-05 10:26:58.959280"], ["updated_at", "2016-12-05 10:26:58.959280"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"378"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 378], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:26:58.965596"], ["updated_at", "2016-12-05 10:26:58.965596"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/30
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$nOV9fBOFGXlrwjn7iDFjRuTvsMEuLytb8fukfNbfv2nuuylQLsRSa"], ["created_at", "2016-12-05 10:26:58.973581"], ["updated_at", "2016-12-05 10:26:58.973581"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 379], ["created_at", "2016-12-05 10:26:58.976813"], ["updated_at", "2016-12-05 10:26:58.976813"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day1", "content"=>"Banana Chocolate Smoothie", "user_id"=>"379"}, "id"=>"379"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 379]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$yD4WhApyYReuSFg7UeC8BOJfal7Ot6ks8mKnPf.nkU67GYiF5kDMa"], ["created_at", "2016-12-05 10:26:58.990619"], ["updated_at", "2016-12-05 10:26:58.990619"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 380], ["created_at", "2016-12-05 10:26:58.996237"], ["updated_at", "2016-12-05 10:26:58.996237"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"380"}, "id"=>"380"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 380]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5[0m  [["user_id", 380], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:26:59.000299"], ["id", 380]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/380
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 380]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$/KnzCAOcw0oZjkzSYJO8XO1e3PyB4Rk/30joMmTAoO1svtqZN4S3u"], ["created_at", "2016-12-05 10:26:59.009903"], ["updated_at", "2016-12-05 10:26:59.009903"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 381], ["created_at", "2016-12-05 10:26:59.011902"], ["updated_at", "2016-12-05 10:26:59.011902"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"381"}, "id"=>"381"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 381]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5[0m  [["user_id", 381], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:26:59.015511"], ["id", 381]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/381
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 381]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$B0AAUiA9mdZvh3N6KipZO.tzOfjHwHIABl3JhrowL8lpKq4QluwG6"], ["created_at", "2016-12-05 10:26:59.025374"], ["updated_at", "2016-12-05 10:26:59.025374"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$h8bkdFAci5UL1jiG2k0jXepiRLcrMx.KjjlNuWK84Xdpp4JH0tXkC"], ["created_at", "2016-12-05 10:26:59.035309"], ["updated_at", "2016-12-05 10:26:59.035309"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$zkc8ynWgiK/UHSbt4vnuRurzFVhfSatU.ek2bAtfa8g4224bC39g2"], ["created_at", "2016-12-05 10:26:59.047105"], ["updated_at", "2016-12-05 10:26:59.047105"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$AtwSpFCpIe/GR90jepAmXuX9TRkK55tRyew21xipW285Axnk2cdkO"], ["created_at", "2016-12-05 10:27:29.345282"], ["updated_at", "2016-12-05 10:27:29.345282"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 12.6ms | ActiveRecord: 4.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$jkgSh/AkbM8Te881J1nGWOqdmBc1KUN6HpDc2FPca/yD3D5/.nY/2"], ["created_at", "2016-12-05 10:27:29.389729"], ["updated_at", "2016-12-05 10:27:29.389729"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$cxt4h.gzLwSXW94TXygJgOVzm5eaAYyu0Qccffvwptb2soZasxhwK"], ["created_at", "2016-12-05 10:27:29.400782"], ["updated_at", "2016-12-05 10:27:29.400782"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$D6ovIFE5Gu.Suz9oxMWR1ODb2WQGDWRzmemwFbkMLUM0/aSfFPzlG"], ["created_at", "2016-12-05 10:27:29.409583"], ["updated_at", "2016-12-05 10:27:29.409583"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 388], ["created_at", "2016-12-05 10:27:29.412734"], ["updated_at", "2016-12-05 10:27:29.412734"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$oE3TfJemAMZcopVvFyn8cOElypxoH2ixW8fc8wUVDSNyYuUgGoeym"], ["created_at", "2016-12-05 10:27:29.469898"], ["updated_at", "2016-12-05 10:27:29.469898"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 389], ["created_at", "2016-12-05 10:27:29.472328"], ["updated_at", "2016-12-05 10:27:29.472328"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$pk/ForsJQ8VdDz8gCqpgqejkxP7laJfgcKr6AobQjKoIMPe/.CnWS"], ["created_at", "2016-12-05 10:27:29.483359"], ["updated_at", "2016-12-05 10:27:29.483359"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 390], ["created_at", "2016-12-05 10:27:29.485496"], ["updated_at", "2016-12-05 10:27:29.485496"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"390"}, "id"=>"390"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 390]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5[0m  [["user_id", 390], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:27:29.495390"], ["id", 390]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/390
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 390]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Kyp4FuIdE28k2RIhkIPdSOqvvglSfeCmj.z/6.RdGQ2HDem3lrUQy"], ["created_at", "2016-12-05 10:27:29.505849"], ["updated_at", "2016-12-05 10:27:29.505849"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 391], ["created_at", "2016-12-05 10:27:29.508230"], ["updated_at", "2016-12-05 10:27:29.508230"]]
+  [1m[35m (1.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"391"}, "id"=>"391"}
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 391]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5[0m  [["user_id", 391], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:27:29.515487"], ["id", 391]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/391
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 391]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$J9dnJz0zGAATlhJTgC/kcuUlT7hBlitqGnOUh7GzjNY.s8fDJO8gq"], ["created_at", "2016-12-05 10:27:29.524624"], ["updated_at", "2016-12-05 10:27:29.524624"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 392], ["created_at", "2016-12-05 10:27:29.527259"], ["updated_at", "2016-12-05 10:27:29.527259"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day1", "content"=>"Banana Chocolate Smoothie", "user_id"=>"392"}, "id"=>"392"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 392]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered statuses/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$PpgzifE0pG/lRm/VqfJWEurLNLuI2ri1rJjN/xKcd2w0TU8nSJnBi"], ["created_at", "2016-12-05 10:27:29.551523"], ["updated_at", "2016-12-05 10:27:29.551523"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 393], ["created_at", "2016-12-05 10:27:29.555214"], ["updated_at", "2016-12-05 10:27:29.555214"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"393"}
+  [1m[36mStatus Load (0.4ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 393]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$kKBmDt5owA80xp9aomqtm.bxnAU.T3QwnPzzAMOl2RM3Vr/lzMiVi"], ["created_at", "2016-12-05 10:27:29.568368"], ["updated_at", "2016-12-05 10:27:29.568368"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 394], ["created_at", "2016-12-05 10:27:29.571212"], ["updated_at", "2016-12-05 10:27:29.571212"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"394"}
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 394]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$FL5fsapDzk5lKYthpq52.O0ial5KO4fKRU4bz1hgCtJv5iJv9eFvu"], ["created_at", "2016-12-05 10:27:29.585596"], ["updated_at", "2016-12-05 10:27:29.585596"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"395"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Ar93K3XXjs2nma1s6khA6.s8Mf.qIwQdJUv6ZAy/GvVRSGFRyKNhu"], ["created_at", "2016-12-05 10:27:29.597368"], ["updated_at", "2016-12-05 10:27:29.597368"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"396"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$tmKpAzzTJ8VxIE3JL9BosuvD/XoXSEIE2usCnLE79/nSQDe7Y5jn6"], ["created_at", "2016-12-05 10:27:29.616650"], ["updated_at", "2016-12-05 10:27:29.616650"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"397"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 397], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:27:29.622307"], ["updated_at", "2016-12-05 10:27:29.622307"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/31
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$esRUIHG22lFAKo1D.MhF0e44FzfnUftIZOV3bEr6fPTKRdF1FNUDO"], ["created_at", "2016-12-05 10:27:29.631631"], ["updated_at", "2016-12-05 10:27:29.631631"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"398"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 398], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:27:29.634823"], ["updated_at", "2016-12-05 10:27:29.634823"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/32
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$YFUSXk2E2Fb883/2A31v5OuCCUbYd6PVxoOk0pY5Sb3WgQTLq.I1u"], ["created_at", "2016-12-05 10:28:30.185785"], ["updated_at", "2016-12-05 10:28:30.185785"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 13.4ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$ODL35IgKA9yf0nYlh59Xe.ekpAGFxSWBdvP.IbkqzVsvM6JOtMXwy"], ["created_at", "2016-12-05 10:28:30.225757"], ["updated_at", "2016-12-05 10:28:30.225757"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$kfoZzgo8zfC9fjiNqN405OCEfxVtsodX/0lhiqvSeRkZ9SEFXdYxm"], ["created_at", "2016-12-05 10:28:30.234298"], ["updated_at", "2016-12-05 10:28:30.234298"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#new as HTML
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$bs6XZBsgDqq6WnT.BQRqWuH1ZQxfqEu06yAm75V3Az6hsRUE138I2"], ["created_at", "2016-12-05 10:28:30.245388"], ["updated_at", "2016-12-05 10:28:30.245388"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 402], ["created_at", "2016-12-05 10:28:30.247740"], ["updated_at", "2016-12-05 10:28:30.247740"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"402"}, "id"=>"402"}
+  [1m[35mStatus Load (0.3ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 402]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5  [["user_id", 402], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:28:30.257560"], ["id", 402]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/402
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+  [1m[35mStatus Load (0.4ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 402]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$Nvj.ArKhSmaEkFBOvypFCOOjc0nLJo3FCCpyAVD4EZutWi6oNZc3a"], ["created_at", "2016-12-05 10:28:30.270373"], ["updated_at", "2016-12-05 10:28:30.270373"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 403], ["created_at", "2016-12-05 10:28:30.274618"], ["updated_at", "2016-12-05 10:28:30.274618"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challengesss", "content"=>"Banana Chocolate Smoothie", "user_id"=>"403"}, "id"=>"403"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 403]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "statuses" SET "user_id" = $1, "title" = $2, "content" = $3, "updated_at" = $4 WHERE "statuses"."id" = $5  [["user_id", 403], ["title", "Day One Healthy Challengesss"], ["content", "Banana Chocolate Smoothie"], ["updated_at", "2016-12-05 10:28:30.278310"], ["id", 403]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/403
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 403]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$5CkfNR/Kw0VjOYpEWiM7p.vrM4fFIvQo/m/yuY4Rbhd0Vi/UPzdzC"], ["created_at", "2016-12-05 10:28:30.286715"], ["updated_at", "2016-12-05 10:28:30.286715"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 404], ["created_at", "2016-12-05 10:28:30.288877"], ["updated_at", "2016-12-05 10:28:30.288877"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"title"=>"Day1", "content"=>"Banana Chocolate Smoothie", "user_id"=>"404"}, "id"=>"404"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 404]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$YB4MBuuDCHaK1F4w38kXHOyyzo43JYobPIjK.1uPtw.oHUoM.MlnG"], ["created_at", "2016-12-05 10:28:30.306757"], ["updated_at", "2016-12-05 10:28:30.306757"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"405"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$6YRYORmF9fzXKj2xDQ.9TuW..Lb.2TgwFo7GkTgZKGflI0j297jYa"], ["created_at", "2016-12-05 10:28:30.324811"], ["updated_at", "2016-12-05 10:28:30.324811"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day", "content"=>"Banana Chocolate Smoothie", "user_id"=>"406"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered statuses/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$zNbsf6mFCzPufeR1uSBq6.mXwj3wCtrPm8ebmZjBX8PhSu34fJxQ."], ["created_at", "2016-12-05 10:28:30.335789"], ["updated_at", "2016-12-05 10:28:30.335789"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"407"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 407], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:28:30.341735"], ["updated_at", "2016-12-05 10:28:30.341735"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/33
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$uX25jrzr2anyB36fUJbute0TPLA4x.MpwOYbpWinKHPOkhSropFki"], ["created_at", "2016-12-05 10:28:30.348795"], ["updated_at", "2016-12-05 10:28:30.348795"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"title"=>"Day One Healthy Challenge", "content"=>"Banana Chocolate Smoothie", "user_id"=>"408"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "statuses" ("user_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 408], ["title", "Day One Healthy Challenge"], ["content", "Banana Chocolate Smoothie"], ["created_at", "2016-12-05 10:28:30.352759"], ["updated_at", "2016-12-05 10:28:30.352759"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/34
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36mStatus Load (0.5ms)[0m  [1mSELECT  "statuses".* FROM "statuses"  ORDER BY "statuses"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$QR70NsLZ2ZaNC6MR1SBrzeB4GmOBFa08/kl0MmFNOf5bWnwqFN3Wi"], ["created_at", "2016-12-05 10:28:30.362928"], ["updated_at", "2016-12-05 10:28:30.362928"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 409], ["created_at", "2016-12-05 10:28:30.366344"], ["updated_at", "2016-12-05 10:28:30.366344"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"409"}
+  [1m[36mStatus Load (0.8ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 409]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$4nSKGpHH1/y110LL/IMkKuFy3aeU/gJ3z24mhsPiRl3Fpcz87iw/6"], ["created_at", "2016-12-05 10:28:30.379747"], ["updated_at", "2016-12-05 10:28:30.379747"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 410], ["created_at", "2016-12-05 10:28:30.381745"], ["updated_at", "2016-12-05 10:28:30.381745"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"410"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 410]]
+  Rendered statuses/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$rpoyc2AYYfnwfK1OwvsyGO3x45DKFGxYbbpTMARLBRC7shsd63/M."], ["created_at", "2016-12-05 10:28:30.389939"], ["updated_at", "2016-12-05 10:28:30.389939"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 411], ["created_at", "2016-12-05 10:28:30.391935"], ["updated_at", "2016-12-05 10:28:30.391935"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"411"}
+  [1m[35mStatus Load (0.2ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1  [["id", 411]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mLike Load (0.7ms)[0m  SELECT "likes".* FROM "likes" WHERE "likes"."status_id" = $1  [["status_id", 411]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = $1[0m  [["id", 411]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 43ms (ActiveRecord: 2.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$0ZyLMcKAEBfrSDMrBCwXdenigck94mERQaZ3DDbBr2WiexvDA4Azi"], ["created_at", "2016-12-05 10:28:30.442665"], ["updated_at", "2016-12-05 10:28:30.442665"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "statuses" ("content", "title", "id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "MyText Dairy One Two "], ["title", "MyString One Two Three"], ["id", 412], ["created_at", "2016-12-05 10:28:30.444761"], ["updated_at", "2016-12-05 10:28:30.444761"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"412"}
+  [1m[36mStatus Load (0.2ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT 1[0m  [["id", 412]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."status_id" = $1[0m  [["status_id", 412]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "statuses" WHERE "statuses"."id" = $1  [["id", 412]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"joshna.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshna.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 20.4ms | ActiveRecord: 3.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"joshna.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshna.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"josh@na.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$9VP88IitQ8yQ4MiSbE8VmOKoisNG3I477hbDd6gpcN.EVRFetki/q"], ["created_at", "2016-12-05 10:29:15.711655"], ["updated_at", "2016-12-05 10:29:15.711655"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/413
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"josh@na.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$PpjO.qfyhvcdxmX7q0tb3.bXV0TLXC35pJeUZSaFsKk1ibs1YecJq"], ["created_at", "2016-12-05 10:29:15.725911"], ["updated_at", "2016-12-05 10:29:15.725911"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/414
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$e8kIzKxszIRZb/Z9QX9hqOiNWsxrCobIX4Ohqa4YpHAZWqQYQuCzC"], ["created_at", "2016-12-05 10:29:15.733795"], ["updated_at", "2016-12-05 10:29:15.733795"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"415"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 415]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = $1[0m  [["user_id", 415]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1  [["user_id", 415]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 415]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 32ms (ActiveRecord: 3.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$/XYB2.r20hpxHh/jjLbBXO6Re8fIB6aaJqr3VAlUZJAtMWtjmtVMS"], ["created_at", "2016-12-05 10:29:15.775742"], ["updated_at", "2016-12-05 10:29:15.775742"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"416"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 416]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = $1  [["user_id", 416]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 416]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 416]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$qJSG9qrIsvZr1dcTYz1h1.61iE0o4IYYioA7qkGFMc0trDy.v1Qza"], ["created_at", "2016-12-05 10:29:15.848272"], ["updated_at", "2016-12-05 10:29:15.848272"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"joshnextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"417"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 417]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'joshnextacademy1.com' AND "users"."id" != 417) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$O81Dk4dg1liO0qFz/cQGQOwA0wU11Y2F2spSlsC4QOXC16u8VGh0W"], ["created_at", "2016-12-05 10:29:15.865301"], ["updated_at", "2016-12-05 10:29:15.865301"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"josh@nextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"418"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 418]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'josh@nextacademy1.com' AND "users"."id" != 418) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "name" = $1, "email" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Josh"], ["email", "josh@nextacademy1.com"], ["password_digest", "$2a$04$QdIhhm0WOFkzmDB.VCZHWO37dEfMKEA5QkAhpU6FjKC.AQpCGwmQ6"], ["updated_at", "2016-12-05 10:29:15.885018"], ["id", 418]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/418
+Completed 302 Found in 18ms (ActiveRecord: 1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 418]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$hc7VXhSQPYKZZZX2gIL4eeeYEi8lnB3QVmiIEtUMD/XLvyr9uCo06"], ["created_at", "2016-12-05 10:29:15.897242"], ["updated_at", "2016-12-05 10:29:15.897242"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"josh@nextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"419"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 419]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'josh@nextacademy1.com' AND "users"."id" != 419) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "name" = $1, "email" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Josh"], ["email", "josh@nextacademy1.com"], ["password_digest", "$2a$04$QQPmel56ziaP0bnK2OmsiO4Oe6872ejDMdngjlmY3ZT8HN9.T1yB2"], ["updated_at", "2016-12-05 10:29:15.903577"], ["id", 419]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/419
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 419]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$EbaOKWyQTx.6a072S7ef3uKeuneRpr205eJ3UJ94bYJY.bo3GokcK"], ["created_at", "2016-12-05 10:29:15.911605"], ["updated_at", "2016-12-05 10:29:15.911605"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"420"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 420]]
+  Rendered users/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$FlUPlm7De7BSwuhdyzoG9O5cv.QFUzNhYa4kJmQwgnxOMGASQNnRS"], ["created_at", "2016-12-05 10:29:15.919797"], ["updated_at", "2016-12-05 10:29:15.919797"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"421"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 421]]
+  Rendered users/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$fh8HaFqrx.d9ZnLRh/UXleAQfmlsd9GBhgymbHJJPrbNTIOZyANJG"], ["created_at", "2016-12-05 10:29:49.858778"], ["updated_at", "2016-12-05 10:29:49.858778"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"422"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 422]]
+  Rendered users/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$kRN.KMESCX/ReeTV/6vpFuItnR19JljU3JkJyEAvOJFmuqTov8S/m"], ["created_at", "2016-12-05 10:29:49.895438"], ["updated_at", "2016-12-05 10:29:49.895438"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"423"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 423]]
+  Rendered users/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"joshna.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshna.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"joshna.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'joshna.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"josh@na.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$CbJVudZ3cQEM21pPo1riAem5KQ0..sY1jwV0XX6eov8/Hx2hd3fza"], ["created_at", "2016-12-05 10:29:49.930267"], ["updated_at", "2016-12-05 10:29:49.930267"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/424
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"Josh Teng", "email"=>"josh@na.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$G4BskyQIjbdm57wQmKT/vOgEFguEwsaX.s2RpkJTE6vlrtQTZOQ.m"], ["created_at", "2016-12-05 10:29:49.948101"], ["updated_at", "2016-12-05 10:29:49.948101"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/425
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$OJ.eZsPXA3RWF22JhwYwzu2qpy3fzBp2fT4M9sB3/MA4P.Iox21yW"], ["created_at", "2016-12-05 10:29:49.956822"], ["updated_at", "2016-12-05 10:29:49.956822"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"426"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 426]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mStatus Load (0.3ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = $1[0m  [["user_id", 426]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1  [["user_id", 426]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 426]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 30ms (ActiveRecord: 3.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$ZvifrvCm4UmlX5SN1pjWuOhlc52xtOeD.U8RsNwQ5qzOgGsBXQb3q"], ["created_at", "2016-12-05 10:29:49.998022"], ["updated_at", "2016-12-05 10:29:49.998022"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"427"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 427]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = $1  [["user_id", 427]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 427]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 427]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'audrey@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Audrey"], ["email", "audrey@na.com"], ["password_digest", "$2a$04$SXq.5ELnsFv/QN2zDZJO..F8GYxuqALwtwrAT9/2ulwV2hjGla29G"], ["created_at", "2016-12-05 10:29:50.021054"], ["updated_at", "2016-12-05 10:29:50.021054"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"josh@nextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"428"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 428]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'josh@nextacademy1.com' AND "users"."id" != 428) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "name" = $1, "email" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Josh"], ["email", "josh@nextacademy1.com"], ["password_digest", "$2a$04$3IYqw8QCDPfnKC3QnahlnO80wcxpsVJh3n4jzorq2gZFsXIyfDEQ."], ["updated_at", "2016-12-05 10:29:50.029594"], ["id", 428]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/428
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 428]]
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$c54RdnaU/bw01QcjT2cklOcrhL8ZKfDFryvsYow0qx4isB4T9lxdy"], ["created_at", "2016-12-05 10:29:50.042391"], ["updated_at", "2016-12-05 10:29:50.042391"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"josh@nextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"429"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 429]]
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'josh@nextacademy1.com' AND "users"."id" != 429) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "name" = $1, "email" = $2, "password_digest" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Josh"], ["email", "josh@nextacademy1.com"], ["password_digest", "$2a$04$KjcRtqnG8fPeVlnaMyktKedsHKiSkLtFEfUOZOd.CwpsxZqca0wF2"], ["updated_at", "2016-12-05 10:29:50.053263"], ["id", 429]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/429
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 429]]
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'josh@na.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Josh Teng"], ["email", "josh@na.com"], ["password_digest", "$2a$04$JZMF.SkVU7TI7dzUFgfZL.fIoS3x2vT2Pa2A0PsS6HLdQzvvwnh4a"], ["created_at", "2016-12-05 10:29:50.061189"], ["updated_at", "2016-12-05 10:29:50.061189"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"Josh", "email"=>"joshnextacademy1.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"430"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 430]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'joshnextacademy1.com' AND "users"."id" != 430) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered users/edit.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK

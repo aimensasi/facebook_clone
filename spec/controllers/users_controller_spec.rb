@@ -107,20 +107,18 @@ RSpec.describe UsersController, type: :controller do
 
 
   describe "DELETE #destroy" do
-    skip "Waiting to finish statuses controller test" do 
-      it "destroys the requested user" do
-        user = user1
-        expect {
-          delete :destroy, {:id => user.to_param}
-        }.to change(User, :count).by(-1)
-      end
-
-      it "redirects to the statuses_path" do
-        user = user1
+    it "destroys the requested user" do
+      user = user1
+      expect {
         delete :destroy, {:id => user.to_param}
-        expect(response).to redirect_to(statuses_path)
-        expect(flash[:notice]).to eq "Account is deleted"
-      end
+      }.to change(User, :count).by(-1)
+    end
+
+    it "redirects to the statuses_path" do
+      user = user1
+      delete :destroy, {:id => user.to_param}
+      expect(response).to redirect_to(statuses_path)
+      expect(flash[:notice]).to eq "Account is deleted"
     end
   end
 
