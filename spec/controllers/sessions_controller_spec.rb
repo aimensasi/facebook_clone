@@ -24,8 +24,7 @@ RSpec.describe SessionsController, type: :controller do
 
   describe "POST #create" do
     # happy path
-    xcontext "valid log in params" do
-      skip "Pending until testing the statuses controller"
+    context "valid log in params" do
       before do
         post :create, valid_params
       end
